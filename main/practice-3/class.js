@@ -16,7 +16,7 @@ module.exports = class Class {
     }
     assignLeader(student) {
         this.leader = student.name;
-        if (this.member.incluldes(student.id)) {
+        if (this.member.includes(student.id)) {
             if (this.teacher) {
                 this.teacher.notifyLeaderAssigned(student);
             }
